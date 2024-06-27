@@ -14,6 +14,14 @@
 		81D2D0D52C2DC4E400732648 /* PrododoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0D42C2DC4E400732648 /* PrododoroTests.swift */; };
 		81D2D0DF2C2DC4E400732648 /* PrododoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0DE2C2DC4E400732648 /* PrododoroUITests.swift */; };
 		81D2D0E12C2DC4E400732648 /* PrododoroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0E02C2DC4E400732648 /* PrododoroUITestsLaunchTests.swift */; };
+		81D2D0EE2C2DC4FA00732648 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0ED2C2DC4FA00732648 /* MenuView.swift */; };
+		81D2D0F02C2DC50900732648 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0EF2C2DC50900732648 /* SettingsView.swift */; };
+		81D2D0F22C2DC51200732648 /* Finance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0F12C2DC51200732648 /* Finance.swift */; };
+		81D2D0F42C2DC51C00732648 /* To Do.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0F32C2DC51C00732648 /* To Do.swift */; };
+		81D2D0F62C2DC52700732648 /* Completed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0F52C2DC52700732648 /* Completed.swift */; };
+		81D2D0F82C2DC53500732648 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0F72C2DC53500732648 /* Quotes.swift */; };
+		81D2D0FA2C2DC6B400732648 /* TaskTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0F92C2DC6B400732648 /* TaskTimer.swift */; };
+		81D2D0FC2C2DC6DC00732648 /* TaskDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0FB2C2DC6DC00732648 /* TaskDone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		81D2D0DA2C2DC4E400732648 /* PrododoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrododoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D2D0DE2C2DC4E400732648 /* PrododoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrododoroUITests.swift; sourceTree = "<group>"; };
 		81D2D0E02C2DC4E400732648 /* PrododoroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrododoroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		81D2D0ED2C2DC4FA00732648 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		81D2D0EF2C2DC50900732648 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		81D2D0F12C2DC51200732648 /* Finance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance.swift; sourceTree = "<group>"; };
+		81D2D0F32C2DC51C00732648 /* To Do.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "To Do.swift"; sourceTree = "<group>"; };
+		81D2D0F52C2DC52700732648 /* Completed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completed.swift; sourceTree = "<group>"; };
+		81D2D0F72C2DC53500732648 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		81D2D0F92C2DC6B400732648 /* TaskTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimer.swift; sourceTree = "<group>"; };
+		81D2D0FB2C2DC6DC00732648 /* TaskDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				81D2D0C32C2DC4E100732648 /* PrododoroApp.swift */,
+				81D2D0ED2C2DC4FA00732648 /* MenuView.swift */,
+				81D2D0EF2C2DC50900732648 /* SettingsView.swift */,
 				81D2D0C52C2DC4E100732648 /* ContentView.swift */,
+				81D2D0F12C2DC51200732648 /* Finance.swift */,
+				81D2D0F52C2DC52700732648 /* Completed.swift */,
+				81D2D0F32C2DC51C00732648 /* To Do.swift */,
+				81D2D0F72C2DC53500732648 /* Quotes.swift */,
 				81D2D0C72C2DC4E300732648 /* Assets.xcassets */,
 				81D2D0C92C2DC4E300732648 /* Preview Content */,
 			);
@@ -106,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				81D2D0CA2C2DC4E300732648 /* Preview Assets.xcassets */,
+				81D2D0F92C2DC6B400732648 /* TaskTimer.swift */,
+				81D2D0FB2C2DC6DC00732648 /* TaskDone.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -257,7 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D2D0F82C2DC53500732648 /* Quotes.swift in Sources */,
+				81D2D0F62C2DC52700732648 /* Completed.swift in Sources */,
+				81D2D0F42C2DC51C00732648 /* To Do.swift in Sources */,
+				81D2D0FA2C2DC6B400732648 /* TaskTimer.swift in Sources */,
+				81D2D0FC2C2DC6DC00732648 /* TaskDone.swift in Sources */,
 				81D2D0C62C2DC4E100732648 /* ContentView.swift in Sources */,
+				81D2D0F02C2DC50900732648 /* SettingsView.swift in Sources */,
+				81D2D0F22C2DC51200732648 /* Finance.swift in Sources */,
+				81D2D0EE2C2DC4FA00732648 /* MenuView.swift in Sources */,
 				81D2D0C42C2DC4E100732648 /* PrododoroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
