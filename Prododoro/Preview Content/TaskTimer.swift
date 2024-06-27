@@ -24,11 +24,21 @@ struct TaskTimer: View {
                     .foregroundColor(Color(.black))
                     .font(.system(size: 30))
                     .fontWeight(.light)
-                Text("\(hours):\(minutes):\(seconds)")
+                Text("")
                     .foregroundColor(Color(.black))
-                    .font(.system(size: 80))
-                    .fontWeight(.heavy)
-                    .padding(.bottom, 20)
+                ZStack {
+                    Text("\(hours):\(minutes):\(seconds)")
+                        .font(.system(size: 80))
+                        .fontWeight(.heavy)
+                        .padding(.bottom, 20)
+                    Text("\(hours):\(minutes):\(seconds)")
+                        .font(.system(size: 80))
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color("accentMain"))
+                        .padding(.bottom, 25)
+                        .padding(.trailing, 5)
+                }
+                .padding(.bottom, -30)
                 if timerPaused {
                     if ((hours+minutes+seconds) == 0) {
                         VStack (alignment: .center) {

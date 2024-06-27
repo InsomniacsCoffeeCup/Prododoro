@@ -116,16 +116,39 @@ struct ContentView: View {
         @Binding var showSettings: Bool
         var body: some View {
             VStack {
-                Text(Variables.quote)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .padding(.bottom, 15)
-                Text(Variables.author)
-                    .font(.subheadline)
-                    .fontWeight(.thin)
+                ZStack {
+                    Text("prododoro")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.black)
+                        .padding(.top, -330)
+                        .padding(.bottom, 10)
+                        .font(.system(size: 45))
+                    Text("prododoro")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color("accentMain"))
+                        .padding(.top, -330)
+                        .padding(.bottom, 15)
+                        .padding(.trailing, 5)
+                        .font(.system(size: 45))
+                }
+                VStack {
+                    Text("DAILY QUOTE")
+                        .fontWeight(.light)
+                        .padding(.bottom, -20)
+                        .font(.system(size:20))
+                    Text("______________")
+                        .padding(.bottom, 15)
+                    Text(Variables.quote)
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                    Text(Variables.author)
+                        .font(.subheadline)
+                        .fontWeight(.thin)
+                }
+                .padding(.top, -100)
             }
-            .padding(75)
+            .padding(.horizontal, 40)
 
         }
         
