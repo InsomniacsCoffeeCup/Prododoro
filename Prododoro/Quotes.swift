@@ -126,10 +126,16 @@ struct Variables {
         "Mia Hamm",
         "Mary Anne Radmacher"
     ]
-
-    static var randomInt = Int.random(in: 0...quotes.count)
-    static let quote = quotes[randomInt]
-    static let author = authors[randomInt]
+    
+    static let breakReminders : [String] = [
+            "drink some water!", "have a snack!", "stand up and stretch!", "take some deep breaths!", "listen to a song!", "take a break!"
+        ]
+    static var randomBreak = Int.random(in: 0...(breakReminders.count - 1))
+    static var breakReminder = breakReminders[randomBreak]
+    static var randomQuote = Int.random(in: 0...(quotes.count-1))
+    static let quote = quotes[randomQuote]
+    static let author = authors[randomQuote]
 }
+
 
 
