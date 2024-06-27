@@ -50,6 +50,11 @@ struct addTask: View {
     }
 }
 
-//#Preview {
-   // addTask()
-//}
+#Preview {
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: ToDoItem.self, configurations: config)
+
+    let toDo = ToDoItem(title: "", isImportant: false)
+    return addTask(toDoItem: toDo, showNewTask: .constant(true))
+        .modelContainer(container)
+}
