@@ -24,6 +24,8 @@
 		81D2D0FC2C2DC6DC00732648 /* TaskDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D2D0FB2C2DC6DC00732648 /* TaskDone.swift */; };
 		AFFFB1832C2DD3DB000BFD14 /* BudgetOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFB1822C2DD3DB000BFD14 /* BudgetOverview.swift */; };
 		AFFFB1852C2DD3E7000BFD14 /* FinanceTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFB1842C2DD3E7000BFD14 /* FinanceTips.swift */; };
+		BDD3095C2C2DDFF60085817D /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD3095B2C2DDFF60085817D /* ToDoItem.swift */; };
+		BDD3095E2C2DE0580085817D /* addTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD3095D2C2DE0580085817D /* addTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		81D2D0FB2C2DC6DC00732648 /* TaskDone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDone.swift; sourceTree = "<group>"; };
 		AFFFB1822C2DD3DB000BFD14 /* BudgetOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetOverview.swift; sourceTree = "<group>"; };
 		AFFFB1842C2DD3E7000BFD14 /* FinanceTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTips.swift; sourceTree = "<group>"; };
+		BDD3095B2C2DDFF60085817D /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		BDD3095D2C2DE0580085817D /* addTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				AFFFB1822C2DD3DB000BFD14 /* BudgetOverview.swift */,
 				81D2D0F52C2DC52700732648 /* Completed.swift */,
 				81D2D0F32C2DC51C00732648 /* To Do.swift */,
+				BDD3095B2C2DDFF60085817D /* ToDoItem.swift */,
+				BDD3095D2C2DE0580085817D /* addTask.swift */,
 				81D2D0F72C2DC53500732648 /* Quotes.swift */,
 				81D2D0C72C2DC4E300732648 /* Assets.xcassets */,
 				81D2D0C92C2DC4E300732648 /* Preview Content */,
@@ -291,11 +297,13 @@
 				AFFFB1832C2DD3DB000BFD14 /* BudgetOverview.swift in Sources */,
 				81D2D0F62C2DC52700732648 /* Completed.swift in Sources */,
 				81D2D0F42C2DC51C00732648 /* To Do.swift in Sources */,
+				BDD3095E2C2DE0580085817D /* addTask.swift in Sources */,
 				81D2D0FA2C2DC6B400732648 /* TaskTimer.swift in Sources */,
 				81D2D0FC2C2DC6DC00732648 /* TaskDone.swift in Sources */,
 				81D2D0C62C2DC4E100732648 /* ContentView.swift in Sources */,
 				81D2D0F02C2DC50900732648 /* SettingsView.swift in Sources */,
 				AFFFB1852C2DD3E7000BFD14 /* FinanceTips.swift in Sources */,
+				BDD3095C2C2DDFF60085817D /* ToDoItem.swift in Sources */,
 				81D2D0F22C2DC51200732648 /* Finance.swift in Sources */,
 				81D2D0EE2C2DC4FA00732648 /* MenuView.swift in Sources */,
 				81D2D0C42C2DC4E100732648 /* PrododoroApp.swift in Sources */,

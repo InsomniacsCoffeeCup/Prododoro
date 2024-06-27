@@ -105,9 +105,46 @@ struct ToDoView: View {
     
     @Binding var showMenu:  Bool
     @Binding var showSettings: Bool
+    @State private var showNewTask = false
+    @Query var toDos: [ToDoItem]
+    
     var body: some View {
-        Text("To Do")
-    }
+            VStack {
+                Button("Add Task") {
+                    withAnimation{
+                        self.showNewTask = true
+                    }
+                }
+                .buttonStyle(.borderedProminent)
+                .accentColor(Color(red: 0.7, green: 0.7, blue: 1.0))
+                .controlSize(/*@START_MENU_TOKEN@*/.large/*@END_MENU_TOKEN@*/)
+                .dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
+                
+                
+                
+                Spacer()
+                   
+                List {
+                    ForEach(toDos) {toDoItem in
+                        if toDoItem.isImportant == true {
+                            Text("‼️" + toDoItem.title)
+                        } else {
+                            Text(toDoItem.title)
+                        }
+                        
+                    }
+                }
+            }
+        //connecting views
+        if showNewTask {
+            addTask(toDoItem: ToDoItem(title: "", isImportant: false), showNewTask: $showNewTask)
+                   
+               }
+        }
+        
+       
+        
+       
     
 }
 
