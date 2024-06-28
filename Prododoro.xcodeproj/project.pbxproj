@@ -26,6 +26,7 @@
 		AFFFB1852C2DD3E7000BFD14 /* FinanceTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFFB1842C2DD3E7000BFD14 /* FinanceTips.swift */; };
 		BDD3095E2C2DE0580085817D /* addTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD3095D2C2DE0580085817D /* addTask.swift */; };
 		C13D92A32C2E4CE100FB7F21 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D92A22C2E4CE100FB7F21 /* ToDoItem.swift */; };
+		C195D28D2C2EFD0C00746514 /* ProgressBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = C195D28C2C2EFD0C00746514 /* ProgressBars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		AFFFB1842C2DD3E7000BFD14 /* FinanceTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTips.swift; sourceTree = "<group>"; };
 		BDD3095D2C2DE0580085817D /* addTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTask.swift; sourceTree = "<group>"; };
 		C13D92A22C2E4CE100FB7F21 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		C195D28C2C2EFD0C00746514 /* ProgressBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				81D2D0C52C2DC4E100732648 /* ContentView.swift */,
 				81D2D0F12C2DC51200732648 /* Finance.swift */,
 				AFFFB1842C2DD3E7000BFD14 /* FinanceTips.swift */,
+				C195D28C2C2EFD0C00746514 /* ProgressBars.swift */,
 				AFFFB1822C2DD3DB000BFD14 /* BudgetOverview.swift */,
 				81D2D0F52C2DC52700732648 /* Completed.swift */,
 				81D2D0F32C2DC51C00732648 /* To Do.swift */,
@@ -302,6 +305,7 @@
 				81D2D0FA2C2DC6B400732648 /* TaskTimer.swift in Sources */,
 				81D2D0FC2C2DC6DC00732648 /* TaskDone.swift in Sources */,
 				81D2D0C62C2DC4E100732648 /* ContentView.swift in Sources */,
+				C195D28D2C2EFD0C00746514 /* ProgressBars.swift in Sources */,
 				81D2D0F02C2DC50900732648 /* SettingsView.swift in Sources */,
 				AFFFB1852C2DD3E7000BFD14 /* FinanceTips.swift in Sources */,
 				81D2D0F22C2DC51200732648 /* Finance.swift in Sources */,
