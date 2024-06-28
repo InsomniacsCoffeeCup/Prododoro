@@ -5,6 +5,7 @@
 //  Created by Karen Diaz on 6/27/24.
 //
 import SwiftUI
+import SwiftData
 
 struct Completed: View {
     //control for menu
