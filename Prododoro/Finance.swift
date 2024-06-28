@@ -272,7 +272,8 @@ struct FinanceView: View {
             .navigationBarTitle("Budget Tracker")
             Spacer()
         }
-        
+        .navigationViewStyle(StackNavigationViewStyle())
+                .accentColor(Color(hue: 0.781, saturation: 0.321, brightness: 0.947))
     }
     
 }
