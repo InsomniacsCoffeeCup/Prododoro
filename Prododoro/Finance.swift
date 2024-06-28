@@ -70,7 +70,7 @@ var body: some View {
             
         }
         
-        .navigationBarTitle("Home", displayMode: .inline)
+        .navigationBarTitle("Finance", displayMode: .inline)
         .navigationBarItems(leading: (
             Button(action: {
                 withAnimation {
