@@ -43,6 +43,7 @@ var body: some View {
                 Color.accentMain
                     .frame(height: geometry.safeAreaInsets.top)
                     .edgesIgnoringSafeArea(.top)
+                    .zIndex(1)
                 FinanceView(showMenu: self.$showMenu, showSettings: self.$showSettings)
                     .frame(width: geometry.size.width, height: geometry.size.height)
                     .offset(x: self.showMenu ? geometry.size.width/2 : 0)
