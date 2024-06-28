@@ -133,7 +133,7 @@ struct ToDoView: View {
                     if toDoItem.isImportant == true {
                             NavigationLink(destination: TaskTimer(taskName: toDoItem.title).navigationBarBackButtonHidden(true)) {
                                 HStack {
-                                    Text("‼️" + toDoItem.title)
+                                    Text("🚨" + toDoItem.title)
                                     Spacer()
                                     Image(systemName: "clock.fill")
                                         .foregroundColor(Color.accentMain)
