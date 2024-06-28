@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TaskTimer: View {
+    @State var taskName = ""
     @State var hours: Int = 0
     @State var minutes: Int = 0
     @State var seconds: Int = 0
@@ -20,12 +21,22 @@ struct TaskTimer: View {
         NavigationStack  {
             VStack {
                 Spacer()
-                Text("task name")
-                    .foregroundColor(Color(.black))
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                Text("")
-                    .foregroundColor(Color(.black))
+                VStack {
+                    Text("task")
+                        .foregroundColor(Color(.black))
+                        .font(.system(size: 25))
+                        .fontWeight(.medium)
+                        .padding(.bottom, -25)
+                    Text("_____")
+                        .foregroundColor(Color(.black))
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                    Text("\(taskName)")
+                        .foregroundColor(Color(.black))
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                }
+                .padding(.top, -30)
                 ZStack {
                     Text("\(hours):\(minutes):\(seconds)")
                         .font(.system(size: 80))
@@ -89,7 +100,8 @@ struct TaskTimer: View {
                 .foregroundColor(Color.black)
                 .alert("finish the task?", isPresented: $endTaskAlert)
                 {
-                    NavigationLink(destination: TaskDone(hours:hours, minutes:minutes, seconds:seconds)
+                    NavigationLink(destination: TaskDone(hours:hours, minutes:minutes, seconds:seconds, taskName: taskName)
+                        .navigationBarBackButtonHidden(true)
                     )
                     {
                     Text("ok")
@@ -99,13 +111,14 @@ struct TaskTimer: View {
                     }
 
                 }
-                Button(action:{exitTaskAlert = true; pauseTimer()}) {
+                Button(action:{exitTaskAlert = true}) {
                     Image(systemName: "arrow.backward.circle.fill")
                     Text("exit")
                 }
                 .foregroundColor(Color.black)
                 .alert("exit the task?", isPresented: $exitTaskAlert) {
-                    NavigationLink(destination: To_Do_())
+                    NavigationLink(destination: To_Do_()
+                        .navigationBarBackButtonHidden(true))
                     {
                         Text("ok")
                     }
@@ -127,6 +140,7 @@ struct TaskTimer: View {
     message: {
         Text(Variables.breakReminder)
     }
+    .navigationBarBackButtonHidden(true)
     }
           func startTimer() {
                 timerPaused = false
@@ -160,5 +174,5 @@ struct TaskTimer: View {
     
     
     #Preview {
-        TaskTimer()
+        TaskTimer(taskName:"")
     }

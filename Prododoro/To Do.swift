@@ -107,9 +107,11 @@ struct ToDoView: View {
     @Binding var showMenu:  Bool
     @Binding var showSettings: Bool
     @State private var showNewTask = false
+    @State private var goToTimer = false
     @Query var toDos: [ToDoItem]
     @Environment(\.modelContext) var modelContext
     var body: some View {
+        
         VStack {
             Button("Add Task") {
                 withAnimation{
@@ -129,18 +131,30 @@ struct ToDoView: View {
             List {
                 ForEach(toDos) {toDoItem in
                     if toDoItem.isImportant == true {
-                        Text("‼️" + toDoItem.title)
+                            NavigationLink(destination: TaskTimer(taskName: toDoItem.title).navigationBarBackButtonHidden(true)) {
+                                HStack {
+                                    Text("‼️" + toDoItem.title)
+                                    Spacer()
+                                    Image(systemName: "clock.fill")
+                                        .foregroundColor(Color.accentMain)
+                                }
+                        }
+                        
                     } else {
                         Text(toDoItem.title)
                     }
+                    
                 }
                 .onDelete(perform: deleteToDo)
             }
         }
+        .navigationBarBackButtonHidden(true)
+        
         //connecting views
         if showNewTask {
             addTask(toDoItem: ToDoItem(title: "", isImportant: false), showNewTask: $showNewTask)
         }
+        
     }
     // delete function
     func deleteToDo(at offsets: IndexSet){
@@ -154,6 +168,7 @@ struct ToDoView: View {
 
 #Preview {
     To_Do_()
+        .modelContainer(for: ToDoItem.self)
 }
 
 
