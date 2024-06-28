@@ -47,20 +47,6 @@ struct MenuView: View {
                     .font(.headline)
                     .padding(.top, 30)
                     
-                    NavigationLink(destination: FinanceTips().navigationBarBackButtonHidden(true)) {
-                        Text("Finance Tips")
-                    }
-                    .foregroundColor(.black)
-                    .font(.headline)
-                    .padding(.top, 30)
-                    
-                    NavigationLink(destination: BudgetOverview().navigationBarBackButtonHidden(true)) {
-                        Text("Budget Overview")
-                    }
-                    .foregroundColor(.black)
-                    .font(.headline)
-                    .padding(.top, 30)
-                    
                     Spacer()
                 }
                 .padding()
