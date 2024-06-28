@@ -65,8 +65,9 @@ struct To_Do_: View {
     
                     }
                 }
-                .gesture(dragLeft)
-                .gesture(dragRight)
+//                .gesture(dragLeft)
+//                .gesture(dragRight)
+// these are preventing delete function from working
                 
             }
             .navigationBarTitle("To Do", displayMode: .inline)
@@ -106,9 +107,8 @@ struct ToDoView: View {
     @Binding var showMenu:  Bool
     @Binding var showSettings: Bool
     @State private var showNewTask = false
-    @Environment(\.modelContext) var modelContext
     @Query var toDos: [ToDoItem]
-    
+    @Environment(\.modelContext) var modelContext
     var body: some View {
         VStack {
             Button("Add Task") {
@@ -144,13 +144,10 @@ struct ToDoView: View {
     }
     // delete function
     func deleteToDo(at offsets: IndexSet){
-        for offset in offsets{
             for offset in offsets{
                 let toDoItem = toDos[offset]
                 modelContext.delete(toDoItem)
             }
-            
-        }
     }
     //end of struct
 }

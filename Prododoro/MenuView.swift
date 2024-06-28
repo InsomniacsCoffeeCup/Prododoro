@@ -1,8 +1,8 @@
 //
 //  MenuView.swift
-//  Prododoro
+//  Final Project
 //
-//  Created by Karen Diaz on 6/27/24.
+//  Created by Karen Diaz on 6/25/24.
 //
 
 import SwiftUI
@@ -26,7 +26,6 @@ struct MenuView: View {
                     .font(.headline)
                     .padding(.top, 10)
                     
-                    
                     NavigationLink(destination: To_Do_().navigationBarBackButtonHidden(true)) {
                         Text("To Do")
                     }
@@ -34,14 +33,12 @@ struct MenuView: View {
                     .font(.headline)
                     .padding(.top, 30)
                     
-                    
                     NavigationLink(destination: Completed().navigationBarBackButtonHidden(true)) {
                         Text("Completed")
                     }
                     .foregroundColor(.black)
                     .font(.headline)
                     .padding(.top, 30)
-                    
                     
                     NavigationLink(destination: Finance().navigationBarBackButtonHidden(true)) {
                         Text("Finance")
@@ -55,11 +52,14 @@ struct MenuView: View {
                     }
                     .foregroundColor(.black)
                     .font(.headline)
-                    padding(.top, 30)
+                    .padding(.top, 30)
                     
                     NavigationLink(destination: BudgetOverview().navigationBarBackButtonHidden(true)) {
                         Text("Budget Overview")
                     }
+                    .foregroundColor(.black)
+                    .font(.headline)
+                    .padding(.top, 30)
                     
                     Spacer()
                 }
